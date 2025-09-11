@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dch5et2hqmabr"]
+
+[ext_resource type="Script" uid="uid://dfmcsplp5a12n" path="res://scenes/items.gd" id="1_sj0ge"]
+[ext_resource type="Texture2D" uid="uid://csev2keti6dok" path="res://assets/sprites/Game Boy Advance - One Piece - Friendly Characters - Monkey D. Luffy.png" id="2_sj0ge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sj0ge"]
+size = Vector2(9.5, 7)
+
+[node name="items" type="CharacterBody2D"]
+script = ExtResource("1_sj0ge")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.522515, -0.246566)
+scale = Vector2(0.233084, 0.260092)
+texture = ExtResource("2_sj0ge")
+hframes = 15
+vframes = 53
+frame = 45
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_sj0ge")

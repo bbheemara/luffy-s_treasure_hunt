@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4qe2s8joxlld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7cy6y"]
+size = Vector2(20, 38)
+
+[node name="CollisionShape2D" type="CollisionShape2D"]
+shape = SubResource("RectangleShape2D_7cy6y")

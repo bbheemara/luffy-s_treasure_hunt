@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://tfvdbk1egvl5"]
+
+[ext_resource type="PackedScene" uid="uid://b3xswn2y8qnu2" path="res://char.tscn" id="1_o5qli"]
+
+[node name="Main" type="Node"]
+
+[node name="luffy" parent="." instance=ExtResource("1_o5qli")]
+position = Vector2(3, 7)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 325)

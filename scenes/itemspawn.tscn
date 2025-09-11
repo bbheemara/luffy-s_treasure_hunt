@@ -1,0 +1,19 @@
+[gd_scene load_steps=0 format=3 uid="uid://dwv32wkg8d775"]
+
+[node name="itemspawn" type="Node2D"]
+position = Vector2(-1, -1)
+
+[node name="spawn" type="Node2D" parent="."]
+position = Vector2(149, 14)
+
+[node name="Marker2D" type="Marker2D" parent="spawn"]
+position = Vector2(-65, -5)
+
+[node name="Marker2D2" type="Marker2D" parent="spawn"]
+position = Vector2(277, -9)
+
+[node name="Marker2D3" type="Marker2D" parent="spawn"]
+position = Vector2(212, -4)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0

@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://b3xswn2y8qnu2"]
+
+[ext_resource type="Texture2D" uid="uid://csev2keti6dok" path="res://assets/sprites/Game Boy Advance - One Piece - Friendly Characters - Monkey D. Luffy.png" id="2_3bvsw"]
+[ext_resource type="PackedScene" uid="uid://dcusyi104prsa" path="res://scenes/ground.tscn" id="2_hs5vj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njpxk"]
+atlas = ExtResource("2_3bvsw")
+region = Rect2(41, 0, 41, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs5vj"]
+atlas = ExtResource("2_3bvsw")
+region = Rect2(82, 56, 41, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3bvsw"]
+atlas = ExtResource("2_3bvsw")
+region = Rect2(0, 56, 47, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ncbi3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_njpxk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hs5vj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3bvsw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4phwq"]
+size = Vector2(128, 212)
+
+[node name="luffy" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(117, 488)
+scale = Vector2(4.12805, 3.69643)
+sprite_frames = SubResource("SpriteFrames_ncbi3")
+frame = 1
+frame_progress = 0.483274
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(127, 429)
+shape = SubResource("RectangleShape2D_4phwq")
+
+[node name="ground" parent="." instance=ExtResource("2_hs5vj")]

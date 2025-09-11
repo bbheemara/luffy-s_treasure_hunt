@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b54q5ul6vec5e"]
+
+[ext_resource type="Texture2D" uid="uid://d1vfiq4w3n3it" path="res://assets/sprites/Game Boy Advance - One Piece - Miscellaneous - Collections.png" id="1_jlb63"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0j2r"]
+size = Vector2(45, 39)
+
+[node name="item_key_bd" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(201, 111)
+texture = ExtResource("1_jlb63")
+hframes = 11
+vframes = 9
+frame = 23
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(201, 113.5)
+shape = SubResource("RectangleShape2D_t0j2r")
